@@ -1,0 +1,20 @@
+.gallery__container {
+  padding: 180px 0;
+}
+
+.gallery__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1.49;
+  color: #000000;
+  margin-bottom: 70px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 65px;
+  justify-content: center;
+}

@@ -1,0 +1,40 @@
+.hero {
+  padding-top: 210px;
+  padding-bottom: 160px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(30, 30, 30, 0.5),
+      rgba(30, 30, 30, 0.5)
+    ),
+    url(../../image/Головний\ екран\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1.49;
+  color: var(--title-color);
+  max-width: 564px;
+  margin-bottom: 50px;
+}
+
+.hero__text {
+  // font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.23;
+  color: var(--text-color);
+  max-width: 438px;
+  margin-bottom: 100px;
+}
+
+.hero__button {
+  margin-top: 100px;
+  padding: 17px 44px;
+}

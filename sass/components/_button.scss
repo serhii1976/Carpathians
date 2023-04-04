@@ -1,0 +1,18 @@
+.button {
+  background: var(--button-color);
+  border-color: transparent;
+  border-radius: 5px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.48;
+  color: #ffffff;
+
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background: var(--accent-color);
+    border-color: transparent;
+  }
+}

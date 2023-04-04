@@ -1,0 +1,67 @@
+.offer {
+  background-image: linear-gradient(
+      rgba(30, 30, 30, 0.5),
+      rgba(30, 30, 30, 0.5)
+    ),
+    url(../../image/Оффер.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.offer__container {
+  padding: 110px 95px;
+  margin: 0 auto;
+}
+
+.offer__title {
+  margin-bottom: 50px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 1.49;
+  color: var(--title-color);
+}
+
+.offer__text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.19;
+  text-align: center;
+  color: var(--title-color);
+
+  margin-bottom: 75px;
+}
+
+.form__wraper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.offer__form {
+  display: flex;
+}
+
+.offer__input {
+  color: #ffffff;
+  border: none;
+  border-bottom: 1px solid #cbcbcb;
+  width: 750px;
+  margin-right: 50px;
+  background: transparent;
+}
+
+.offer__button {
+  padding: 17px 52px;
+}
+
+::placeholder {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 1.19;
+  text-align: start;
+  color: #ffffff;
+}

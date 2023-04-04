@@ -1,0 +1,53 @@
+.bestTours__container {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.bestTours__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 1.49;
+  color: #000000;
+
+  margin-bottom: 80px;
+}
+
+.bestTours__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bestTours__item {
+  padding: 30px 20px;
+  border: 1px solid #000000;
+  flex-basis: calc((100% - 2 * 35px) / 3);
+}
+
+.bestTours__subtitle {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 1.47;
+  color: #000000;
+}
+
+.bestTours__text {
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #000000;
+}
+
+.bestTours__link {
+  color: var(--button-color);
+  &:hover {
+    color: var(--accent-color);
+  }
+}

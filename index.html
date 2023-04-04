@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- header off the site -->
+    <header class="header">
+      <div class="container header__container">
+        <a href="./index.html" class="header__logo link">
+          <img src="./image/Логотип.svg" alt="logo" class="logo" />
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="#about" class="nav__link link">Про нас</a>
+            </li>
+            <li class="nav__item">
+              <a href="#tours" class="nav__link link">Тури</a>
+            </li>
+            <li class="nav__item">
+              <a href="#gallery" class="nav__link link">Галерея</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- section hero -->
+      <section class="hero">
+        <div class="hero__container container">
+          <h3 class="hero__title">Поринь у колорит Карпат разом з нами!</h3>
+          <p class="hero__text">
+            Обирай свій тур та вирушай в подорож у сердце Карпат зі знижкою 20%
+          </p>
+          <button class="hero__button button">Забронювати місце</button>
+        </div>
+      </section>
+
+      <!-- section about -->
+      <section class="about" id="about">
+        <div class="about__container container">
+          <img src="./image/about.jpg" alt="" class="about__image" />
+          <div class="about__description">
+            <h3 class="about__title">Про нас</h3>
+            <ul class="about__list list">
+              <li class="about__item">
+                <p class="about__text">
+                  Ми спеціалізуємось на організації туристичних подорожей вже
+                  більше 17 років.
+                </p>
+              </li>
+              <li class="about__item">
+                <p class="about__text">
+                  Повністю організовуємо тури з цілодобовою підтримкою і
+                  пропонуємо клієнтам: власний трансфер,проживання в
+                  комфортабельному комплексі,включно з харчуванням
+                </p>
+              </li>
+              <li class="about__item">
+                <p class="about__text">
+                  Поїздки з нами завжди веселі та дружні. Також на кожній
+                  екскурсії буде присутній фотограф,який зловить найяскравіші
+                  моменти подорожі!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- section advantages -->
+      <section class="advantages">
+        <div class="container">
+          <ul class="advantages__list list">
+            <li class="advantages__item">
+              <span class="advantages__count">17</span>
+              <p class="advantages__text">років успішної роботи</p>
+              <img src="./image/Ellipse.jpg" alt="" class="advantages__point" />
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__count">270+</span>
+              <p class="advantages__text">організованих турів</p>
+              <img src="./image/Ellipse.jpg" alt="" class="advantages__point" />
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__count">4000+</span>
+              <p class="advantages__text">задоволених кліентів</p>
+              <img src="./image/Ellipse.jpg" alt="" class="advantages__point" />
+            </li>
+            <li class="advantages__item">
+              <span class="advantages__count">1200000+</span>
+              <p class="advantages__text">кілометрів ми проїхали разом!</p>
+              <img src="./image/Ellipse.jpg" alt="" class="advantages__point" />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- section bestTours -->
+      <section class="bestTours" id="tours">
+        <div class="container bestTours__container">
+          <h3 class="bestTours__title">Наші найкращі тури</h3>
+          <ul class="bestTours__list list">
+            <li class="bestTours__item">
+              <img
+                src="./image/Озеро синевир.jpg"
+                alt=""
+                class="bestTours__image"
+              />
+              <h4 class="bestTours__subtitle">Озеро Синевір</h4>
+              <p class="bestTours__text">
+                Побачимо високий Воловецький перевал та глибоке мальовниче озеро
+                Синевір.
+              </p>
+              <a href="" class="bestTours__link link">Детальніше</a>
+            </li>
+            <li class="bestTours__item">
+              <img
+                src="./image/Похід у ліс 1.jpg"
+                alt=""
+                class="bestTours__image"
+              />
+              <h4 class="bestTours__subtitle">Похід у ліс</h4>
+              <p class="bestTours__text">
+                Душа вимагає спокою, а мозок хоче відволіктися? Найкращий тур
+                для повного перезавантаження.
+              </p>
+              <a href="" class="bestTours__link link">Детальніше</a>
+            </li>
+            <li class="bestTours__item">
+              <img
+                src="./image/Похід у гори.jpg"
+                alt=""
+                class="bestTours__image"
+              />
+              <h4 class="bestTours__subtitle">Похід у гори</h4>
+              <p class="bestTours__text">
+                Справжній відпочинок може бути тільки там, де відпочиваєш душею.
+                Тур на Бребенескул–саме це місце.
+              </p>
+              <a href="" class="bestTours__link link">Детальніше</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- section offer -->
+      <section class="offer">
+        <div class="container offer__container">
+          <h3 class="offer__title">
+            Отримайте безкоштовну консультацію протягом 15 хвилин
+          </h3>
+          <p class="offer__text">
+            Залиште заявку прямо зараз і отримайте безкоштовну консультацію!
+            <br />
+            Наш менеджер звʼяжеться з вами протягом 15 хвилин
+          </p>
+          <div class="form__wraper">
+            <form class="offer__form">
+              <input
+                type="number"
+                name="number"
+                placeholder="Ваш телефон"
+                class="offer__input"
+              />
+              <button type="submit" class="offer__button button">
+                Залишити заявку
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery" id="gallery">
+        <div class="container gallery__container">
+          <h3 class="gallery__title">Ви коли-небудь бачили таку красу?</h3>
+          <ul class="gallery__list list">
+            <li class="gallery__item">
+              <img src="./image/image 52.jpg" alt="" class="gallery__image" />
+            </li>
+            <li class="gallery__item">
+              <img src="./image/image 54.jpg" alt="" class="gallery__image" />
+            </li>
+            <li class="gallery__item">
+              <img src="./image/image 4.jpg" alt="" class="gallery__image" />
+            </li>
+            <li class="gallery__item">
+              <img src="./image/image 51.jpg" alt="" class="gallery__image" />
+            </li>
+            <li class="gallery__item">
+              <img src="./image/image 9.jpg" alt="" class="gallery__image" />
+            </li>
+            <li class="gallery__item">
+              <img src="./image/image 53.jpg" alt="" class="gallery__image" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacts">
+      <div class="container footer__container">
+        <div class="footer__wraper">
+          <a href="./index.html" class="header-logo link">
+            <img src="./image/Логотип.svg" alt="logo" class="logo" />
+          </a>
+          <ul class="footerSoc__list list">
+            <li class="footerSoc__item">
+              <a
+                href="https://www.instagram.com/accounts/login/"
+                class="footerSoc__link link"
+                target="blank"
+              >
+                <!-- <svg class="footerSoc__icon" width="35" height="35">
+                  <use href="./image/icons/icons.svg#icon-instagram"></use>
+                </svg> -->
+                <img src="./image/Group-insta.svg" alt="" />
+              </a>
+            </li>
+            <li class="footerSoc__item">
+              <a
+                href="https://www.facebook.com/"
+                class="footerSoc__link link"
+                target="blank"
+              >
+                <svg class="footerSoc__icon" width="35" height="35">
+                  <use href="./image/icons/icons.svg#icon-fasebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footerSoc__item">
+              <a
+                href="https://www.youtube.com/"
+                class="footerSoc__link link"
+                target="blank"
+              >
+                <svg class="footerSoc__icon" width="39" height="31">
+                  <use href="./image/icons/icons.svg#icon-youtube"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <ul class="footerNav__list list">
+          <li class="footerNav__item">
+            <a href="#about" class="footerNav__link link">Про нас</a>
+          </li>
+          <li class="footerNav__item">
+            <a href="#tours" class="footerNav__link link">Наші тури</a>
+          </li>
+          <li class="footerNav__item">
+            <a href="#gallery" class="footerNav__link link">Галерея</a>
+          </li>
+        </ul>
+        <address class="footer__adress">
+          <p class="footer__contact">Контакти</p>
+          <ul class="footerContact__list list">
+            <li class="footerContact__item">
+              <a
+                href="mailto:carpathians@gmail.com"
+                class="footerContact__link link"
+                >carpathians@gmail.com
+              </a>
+            </li>
+            <li class="footerContact__item">
+              <a href="tel:+380502344562" class="footerContact__link link"
+                >+380502344562
+              </a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>
