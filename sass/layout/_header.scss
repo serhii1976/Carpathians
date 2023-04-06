@@ -1,8 +1,21 @@
 .header {
   position: absolute;
-  top: 25px;
+  top: 10px;
   left: 50%;
   transform: translateX(-50%);
+
+  @include tablet {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  @include desktop {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .header__container {
@@ -11,9 +24,22 @@
   justify-content: space-between;
 }
 
+.logo {
+  width: 120px;
+  @include tablet {
+    width: 160px;
+  }
+  @include desktop {
+    width: 180px;
+  }
+}
+
 .nav__list {
-  display: flex;
-  align-items: center;
+  display: none;
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -29,4 +55,53 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  display: block;
+  @include tablet {
+    display: none;
+  }
+}
+
+.menu-btn__icon {
+  fill: #4c4c4c;
+}
+
+.mob-menu {
+  position: fixed;
+  background-color: #858585;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  z-index: 10;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.mob-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+  background-color: #858585;
+  border: transparent;
+  border-radius: 50%;
+}
+
+.mob-menu__list {
+  text-align: center;
+}
+
+.mob-menu__item:not(:last-child) {
+  margin-bottom: 8px;
 }

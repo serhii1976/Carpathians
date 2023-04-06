@@ -1,6 +1,6 @@
 .hero {
-  padding-top: 210px;
-  padding-bottom: 160px;
+  padding-top: 90px;
+  padding-bottom: 50px;
   margin: 0 auto;
   background-image: linear-gradient(
       rgba(30, 30, 30, 0.5),
@@ -10,31 +10,69 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  @include tablet {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  @include desktop {
+    padding-top: 210px;
+    padding-bottom: 160px;
+  }
 }
 
 .hero__title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 1.49;
+  text-align: center;
   color: var(--title-color);
   max-width: 564px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 45px;
+    text-align: start;
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    font-size: 55px;
+    text-align: start;
+    margin-bottom: 50px;
+  }
 }
 
 .hero__text {
-  // font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 1.23;
+  text-align: center;
   color: var(--text-color);
   max-width: 438px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
+
+  @include tablet {
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 80px;
+  }
+  @include desktop {
+    font-size: 22px;
+    text-align: start;
+    margin-bottom: 100px;
+  }
 }
 
 .hero__button {
-  margin-top: 100px;
-  padding: 17px 44px;
+  padding: 10px 30px;
+
+  @include tablet {
+    padding: 14px 38px;
+  }
+  @include desktop {
+    padding: 17px 44px;
+  }
 }

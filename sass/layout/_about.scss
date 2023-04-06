@@ -1,35 +1,79 @@
+.about {
+  padding-top: 80px;
+  padding-bottom: 40px;
+
+  @include tablet {
+    padding-top: 130px;
+    padding-bottom: 70px;
+  }
+  @include desktop {
+    padding-top: 180px;
+    padding-bottom: 100px;
+  }
+}
+
 .about__container {
-  padding-top: 180px;
-  padding-bottom: 100px;
-  display: flex;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .about__description {
-  margin-left: 80px;
+  @include tablet {
+    padding-left: 10%;
+  }
 }
 
 .about__image {
-  object-fit: cover;
+  margin-bottom: 40px;
+  @include tablet {
+    margin-bottom: 0;
+    width: 40%;
+    object-fit: cover;
+  }
 }
 
 .about__title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 1.49;
   color: #000000;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+
+  @include tablet {
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  @include desktop {
+    font-size: 55px;
+    margin-bottom: 40px;
+  }
 }
 
 .about__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+
+  @include tablet {
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    margin-bottom: 30px;
+  }
 }
 
 .about__text {
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1.23;
   color: #000000;
+
+  @include tablet {
+    font-size: 20px;
+  }
+  @include desktop {
+    font-size: 22px;
+  }
 }

@@ -22,7 +22,7 @@
     <header class="header">
       <div class="container header__container">
         <a href="./index.html" class="header__logo link">
-          <img src="./image/Логотип.svg" alt="logo" class="logo" />
+          <img src="./image/icons/logo.svg" alt="logo" class="logo" />
         </a>
         <nav class="header__nav nav">
           <ul class="nav__list list">
@@ -40,6 +40,36 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="menu-btn">
+          <svg class="menu-btn__icon" width="32" height="32">
+            <use href="./image/icons/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="mob-menu__btn">
+              <svg class="mob-menu__icon" width="32" height="32">
+                <use href="./image/icons/symbol-defs.svg#icon-close_40px"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu__list list">
+              <li class="mob-menu__item">
+                <a href="#about" class="nav__link link">Про нас</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="#tours" class="nav__link link">Тури</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="#gallery" class="nav__link link">Галерея</a>
+              </li>
+              <li class="mob-menu__item">
+                <a href="#contacts" class="nav__link link">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -88,7 +118,7 @@
       </section>
 
       <!-- section advantages -->
-      <section class="advantages">
+      <!-- <section class="advantages">
         <div class="container">
           <ul class="advantages__list list">
             <li class="advantages__item">
@@ -113,12 +143,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section bestTours -->
-      <section class="bestTours" id="tours">
+      <!-- <section class="bestTours">
         <div class="container bestTours__container">
-          <h3 class="bestTours__title">Наші найкращі тури</h3>
+          <h3 class="bestTours__title" id="tours">Наші найкращі тури</h3>
           <ul class="bestTours__list list">
             <li class="bestTours__item">
               <img
@@ -161,10 +191,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- section offer -->
-      <section class="offer">
+      <!-- <section class="offer">
         <div class="container offer__container">
           <h3 class="offer__title">
             Отримайте безкоштовну консультацію протягом 15 хвилин
@@ -174,25 +204,25 @@
             <br />
             Наш менеджер звʼяжеться з вами протягом 15 хвилин
           </p>
-          <div class="form__wraper">
-            <form class="offer__form">
-              <input
-                type="number"
-                name="number"
-                placeholder="Ваш телефон"
-                class="offer__input"
-              />
-              <button type="submit" class="offer__button button">
-                Залишити заявку
-              </button>
-            </form>
-          </div>
+          <form class="offer__form">
+            <input
+              type="number"
+              name="number"
+              placeholder="Ваш телефон"
+              class="offer__input"
+            />
+            <button type="submit" class="offer__button button">
+              Залишити заявку
+            </button>
+          </form>
         </div>
-      </section>
+      </section> -->
 
-      <section class="gallery" id="gallery">
+      <!-- <section class="gallery">
         <div class="container gallery__container">
-          <h3 class="gallery__title">Ви коли-небудь бачили таку красу?</h3>
+          <h3 class="gallery__title" id="gallery">
+            Ви коли-небудь бачили таку красу?
+          </h3>
           <ul class="gallery__list list">
             <li class="gallery__item">
               <img src="./image/image 52.jpg" alt="" class="gallery__image" />
@@ -214,10 +244,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer" id="contacts">
+    <!-- <footer class="footer" id="contacts">
       <div class="container footer__container">
         <div class="footer__wraper">
           <a href="./index.html" class="header-logo link">
@@ -229,10 +259,7 @@
                 href="https://www.instagram.com/accounts/login/"
                 class="footerSoc__link link"
                 target="blank"
-              >
-                <!-- <svg class="footerSoc__icon" width="35" height="35">
-                  <use href="./image/icons/icons.svg#icon-instagram"></use>
-                </svg> -->
+              >           
                 <img src="./image/Group-insta.svg" alt="" />
               </a>
             </li>
@@ -289,6 +316,8 @@
           </ul>
         </address>
       </div>
-    </footer>
+    </footer> -->
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
