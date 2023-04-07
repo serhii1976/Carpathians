@@ -83,32 +83,27 @@ body {
 }
 
 .header {
+  width: 100%;
   position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-@media screen and (min-width: 768px) {
-  .header {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-@media screen and (min-width: 1240px) {
-  .header {
-    position: absolute;
-    top: 25px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+  top: 0;
+  left: 0;
 }
 
 .header__container {
+  padding: 10px 0;
   display: flex;
   align-items: start;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding: 15px 0;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .header__container {
+    padding: 25px 0;
+  }
 }
 
 .logo {
@@ -166,13 +161,20 @@ body {
 
 .mob-menu {
   position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
   background-color: #858585;
   padding-top: 45px;
   padding-bottom: 45px;
   z-index: 10;
-  border: 1px solid #000000;
+}
+
+.mob-menu__container {
+  padding: 15px 0;
+  border: 1px solid #ffffff;
   border-radius: 10px;
-  box-shadow: 10px 10px 9px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 9px 3px rgba(255, 254, 254, 0.75);
 }
 
 .is-hidden {
@@ -181,12 +183,17 @@ body {
   visibility: hidden;
 }
 
+.mob-menu-top {
+  position: relative;
+}
+
 .mob-menu__btn {
   position: absolute;
-  top: 10px;
+  top: -5px;
   right: 10px;
   margin: 0;
   padding: 0;
+  fill: #ffffff;
   background-color: #858585;
   border: transparent;
   border-radius: 50%;
@@ -274,6 +281,8 @@ body {
 }
 
 .hero__button {
+  display: block;
+  margin: 0 auto;
   padding: 10px 30px;
 }
 @media screen and (min-width: 768px) {
