@@ -10,8 +10,16 @@
 }
 
 .offer__container {
-  padding: 110px 95px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   margin: 0 auto;
+
+  @include tablet {
+    padding: 100px 60px;
+  }
+  @include desktop {
+    padding: 110px 80px;
+  }
 }
 
 .offer__title {
@@ -19,44 +27,88 @@
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 45px;
+  font-size: 35px;
   line-height: 1.49;
+  text-align: center;
   color: var(--title-color);
+
+  @include tablet {
+    font-size: 40px;
+  }
+  @include desktop {
+    font-size: 45px;
+  }
 }
 
 .offer__text {
   font-style: normal;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.19;
   text-align: center;
   color: var(--title-color);
+  margin-bottom: 55px;
 
-  margin-bottom: 75px;
+  @include tablet {
+    font-size: 20px;
+    margin-bottom: 65px;
+  }
+  @include desktop {
+    font-size: 22px;
+    margin-bottom: 75px;
+  }
 }
 
 .offer__form {
-  display: flex;
+  @include tablet {
+    display: flex;
+  }
 }
 
 .offer__input {
   color: #ffffff;
   border: none;
   border-bottom: 1px solid #cbcbcb;
-  width: 750px;
-  margin-right: 50px;
+  width: 100%;
+  margin-bottom: 50px;
   background: transparent;
+
+  @include tablet {
+    width: 300px;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  @include desktop {
+    width: 750px;
+    margin-right: 50px;
+  }
 }
 
 .offer__button {
-  padding: 17px 52px;
+  display: block;
+  margin: 0 auto;
+  padding: 12px 45px;
+
+  @include tablet {
+    padding: 15px 50px;
+  }
+  @include desktop {
+    padding: 17px 52px;
+  }
 }
 
 ::placeholder {
   font-style: normal;
   font-weight: 300;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 1.19;
   text-align: start;
   color: #ffffff;
+
+  @include tablet {
+    font-size: 20px;
+  }
+  @include desktop {
+    font-size: 22px;
+  }
 }

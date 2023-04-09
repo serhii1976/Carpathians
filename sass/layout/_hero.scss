@@ -72,6 +72,8 @@
   padding: 10px 30px;
 
   @include tablet {
+    display: inline-block;
+    margin: 0;
     padding: 14px 38px;
   }
   @include desktop {

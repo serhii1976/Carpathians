@@ -1,28 +1,61 @@
 .bestTours__container {
-  padding-top: 180px;
-  padding-bottom: 180px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @include desktop {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
 }
 
 .bestTours__title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 1.49;
   color: #000000;
 
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+
+  @include tablet {
+    font-size: 45px;
+    margin-bottom: 60px;
+  }
+  @include desktop {
+    font-size: 55px;
+    margin-bottom: 80px;
+  }
 }
 
 .bestTours__list {
-  display: flex;
-  justify-content: space-between;
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+  @include desktop {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .bestTours__item {
   padding: 30px 20px;
   border: 1px solid #000000;
-  flex-basis: calc((100% - 2 * 35px) / 3);
+  margin-bottom: 30px;
+
+  @include tablet {
+    flex-basis: calc((100% - 2 * 35px) / 3);
+    margin-bottom: 0;
+  }
+}
+
+.bestTours__image {
+  width: 100%;
 }
 
 .bestTours__subtitle {

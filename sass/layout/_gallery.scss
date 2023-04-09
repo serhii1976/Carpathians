@@ -1,20 +1,64 @@
 .gallery__container {
-  padding: 180px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include tablet {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+  @include desktop {
+    padding-top: 180px;
+    padding-bottom: 180px;
+  }
 }
 
 .gallery__title {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 55px;
+  font-size: 35px;
   line-height: 1.49;
+  text-align: center;
   color: #000000;
-  margin-bottom: 70px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 45px;
+    text-align: start;
+    margin-bottom: 50px;
+  }
+  @include desktop {
+    font-size: 55px;
+    margin-bottom: 70px;
+  }
 }
 
 .gallery__list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 65px;
-  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 45px;
+    justify-content: center;
+  }
+  @include desktop {
+    gap: 65px;
+  }
+}
+
+.gallery__item {
+  @include tablet {
+    flex-basis: calc((100% - 45px) / 2);
+  }
+
+  @include desktop {
+    flex-basis: calc((100% - 2 * 65px) / 3);
+  }
+}
+
+.gallery__image {
+  width: 100%;
 }
