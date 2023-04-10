@@ -33,7 +33,9 @@
 
 .footer__info {
   display: flex;
+  flex-wrap: wrap;
   @include tablet {
+    flex-wrap: nowrap;
     width: 60%;
   }
 }
@@ -44,8 +46,8 @@
 
 .footerSoc__list {
   display: flex;
-  flex-basis: 30%;
   justify-content: space-between;
+  gap: 15px;
 
   @include tablet {
     margin-top: 50px;
@@ -62,13 +64,14 @@
 
 .footerNav__list {
   width: 50%;
-
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  gap: 15px;
+  gap: 10px;
 
   @include tablet {
+    justify-content: end;
+    padding-bottom: 5px;
     gap: 25px;
   }
 }
@@ -95,12 +98,14 @@
 }
 
 .footer__adress {
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  gap: 15px;
+  gap: 10px;
 
   @include tablet {
+    justify-content: end;
+    padding-bottom: 5px;
     gap: 25px;
   }
 }
@@ -123,7 +128,7 @@
 .footerContact__list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   justify-content: end;
 
   @include tablet {

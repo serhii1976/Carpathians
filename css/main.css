@@ -360,7 +360,7 @@ body {
 }
 
 .about__item:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 @media screen and (min-width: 768px) {
   .about__item:not(:last-child) {
@@ -392,14 +392,16 @@ body {
 }
 
 .advantages__list {
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #d9d9d9;
-  gap: 10px;
+  flex-direction: column;
+  gap: 30px;
 }
 @media screen and (min-width: 768px) {
   .advantages__list {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
     gap: 60px;
   }
 }
@@ -409,18 +411,22 @@ body {
   }
 }
 
+.advantages__item {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages__item {
+    text-align: start;
+  }
+}
+
 .advantages__count {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 35px;
   line-height: 1.49;
   color: #0468ac;
-}
-@media screen and (min-width: 768px) {
-  .advantages__count {
-    font-size: 35px;
-  }
 }
 @media screen and (min-width: 1240px) {
   .advantages__count {
@@ -429,28 +435,30 @@ body {
 }
 
 .advantages__text {
-  margin-bottom: 45px;
+  margin-top: 5px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.23;
   color: #000000;
 }
-@media screen and (min-width: 768px) {
-  .advantages__text {
-    font-size: 20px;
-  }
-}
 @media screen and (min-width: 1240px) {
   .advantages__text {
+    margin-bottom: 45px;
     font-size: 22px;
   }
 }
 
 .advantages__point {
-  position: absolute;
-  bottom: -7px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .advantages__point {
+    display: block;
+    position: absolute;
+    bottom: -7px;
+  }
 }
 
 .bestTours__container {
@@ -477,11 +485,13 @@ body {
   font-size: 35px;
   line-height: 1.49;
   color: #000000;
+  text-align: center;
   margin-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .bestTours__title {
     font-size: 45px;
+    text-align: start;
     margin-bottom: 60px;
   }
 }
@@ -790,9 +800,11 @@ body {
 
 .footer__info {
   display: flex;
+  flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
   .footer__info {
+    flex-wrap: nowrap;
     width: 60%;
   }
 }
@@ -803,8 +815,8 @@ body {
 
 .footerSoc__list {
   display: flex;
-  flex-basis: 30%;
   justify-content: space-between;
+  gap: 15px;
 }
 @media screen and (min-width: 768px) {
   .footerSoc__list {
@@ -821,13 +833,15 @@ body {
 
 .footerNav__list {
   width: 50%;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  gap: 15px;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .footerNav__list {
+    justify-content: end;
+    padding-bottom: 5px;
     gap: 25px;
   }
 }
@@ -855,13 +869,15 @@ body {
 }
 
 .footer__adress {
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  gap: 15px;
+  gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .footer__adress {
+    justify-content: end;
+    padding-bottom: 5px;
     gap: 25px;
   }
 }
@@ -887,7 +903,7 @@ body {
 .footerContact__list {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
   justify-content: end;
 }
 @media screen and (min-width: 768px) {

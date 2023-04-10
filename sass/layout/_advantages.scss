@@ -1,11 +1,13 @@
 .advantages__list {
-  position: relative;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid #d9d9d9;
+  flex-direction: column;
+  gap: 30px;
 
-  gap: 10px;
   @include tablet {
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
     gap: 60px;
   }
   @include desktop {
@@ -13,40 +15,47 @@
   }
 }
 
+.advantages__item {
+  text-align: center;
+
+  @include tablet {
+    text-align: start;
+  }
+}
+
 .advantages__count {
   font-family: "Oswald";
   font-style: normal;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 35px;
   line-height: 1.49;
   color: #0468ac;
 
-  @include tablet {
-    font-size: 35px;
-  }
   @include desktop {
     font-size: 45px;
   }
 }
 
 .advantages__text {
-  margin-bottom: 45px;
+  margin-top: 5px;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.23;
   color: #000000;
 
-  @include tablet {
-    font-size: 20px;
-  }
   @include desktop {
+    margin-bottom: 45px;
     font-size: 22px;
   }
 }
 
 .advantages__point {
-  position: absolute;
-  bottom: -7px;
+  display: none;
+  @include tablet {
+    display: block;
+    position: absolute;
+    bottom: -7px;
+  }
 }

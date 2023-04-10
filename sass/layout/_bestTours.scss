@@ -19,11 +19,12 @@
   font-size: 35px;
   line-height: 1.49;
   color: #000000;
-
+  text-align: center;
   margin-bottom: 40px;
 
   @include tablet {
     font-size: 45px;
+    text-align: start;
     margin-bottom: 60px;
   }
   @include desktop {
